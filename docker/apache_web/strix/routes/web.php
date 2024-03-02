@@ -18,4 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/admin/races', [RaceController::class, 'index']);
+Route::get('admin/races', [RaceController::class, 'index']);
+Route::get('race/create', [RaceController::class, 'create'])->name('race.create');
