@@ -24,43 +24,43 @@
                     <hr>
                     <ul class="nav nav-pills flex-column mb-auto">
                     <li class="nav-item">
-                        <a href="#" class="nav-link active" aria-current="page">
+                        <a href="/admin/races" class="nav-link text-white @yield('active-races')" aria-current="page">
                         <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
                         Races
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link text-white">
+                        <a href="/admin/sponsors" class="nav-link text-white @yield('active-sponsors')">
                         <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
                         Sponsors
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link text-white">
+                        <a href="/admin/insurances" class="nav-link text-white @yield('active-insurances')">
                         <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
                         Insurances
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link text-white">
+                        <a href="/admin/challenges" class="nav-link text-white @yield('active-challenges')">
                         <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
                         Challenges
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link text-white">
+                        <a href="/admin/competitors" class="nav-link text-white @yield('active-competitors')">
                         <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
                         Competitors
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link text-white">
+                        <a href="/admin/scanqr" class="nav-link text-white @yield('active-scanqr')">
                         <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
                         Scan QR
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link text-white">
+                        <a href="/admin/media" class="nav-link text-white @yield('active-media')">
                         <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
                         Media
                         </a>
@@ -70,7 +70,7 @@
                     <div class="dropdown">
                     <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                        <strong>mdo</strong>
+                        <strong>Administrator</strong>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
                         <li><a class="dropdown-item" href="#">New project...</a></li>
