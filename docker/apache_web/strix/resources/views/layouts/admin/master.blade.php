@@ -15,7 +15,8 @@
     <main class="container-fuild h-100">
         <div class="row h-100 full">
             @section('dashboard')
-            <aside class="col-2 bg-dark sidebar">
+            <div class="col-2 sidebar bg-dark"></div>
+            <aside class="col-2 bg-dark sidebar position-fixed">
                 <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 290px;">
                     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                     <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
