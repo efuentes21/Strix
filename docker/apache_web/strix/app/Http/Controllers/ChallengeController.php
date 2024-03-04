@@ -22,7 +22,7 @@ class ChallengeController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.challenges.new');
     }
 
     /**

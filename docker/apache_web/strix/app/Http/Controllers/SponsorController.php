@@ -22,7 +22,7 @@ class SponsorController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.sponsors.new');
     }
 
     /**

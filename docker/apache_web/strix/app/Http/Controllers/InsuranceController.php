@@ -22,7 +22,7 @@ class InsuranceController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.insurances.new');
     }
 
     /**

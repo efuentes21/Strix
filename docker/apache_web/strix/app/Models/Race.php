@@ -9,6 +9,13 @@ class Race extends Model
 {
     use HasFactory;
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * These attributes can be filled using mass assignment.
+     *
+     * @var array
+     */
     protected $fillable = [
         'description',
         'unevenness',
@@ -23,6 +30,13 @@ class Race extends Model
         'inscription',
     ];
 
+    /**
+     * The attributes that should be cast to native types.
+     *
+     * These attributes will be automatically cast to the specified types when accessed.
+     *
+     * @var array
+     */
     protected $casts = [
         'date' => 'date',
         'time' => 'timestamp',
