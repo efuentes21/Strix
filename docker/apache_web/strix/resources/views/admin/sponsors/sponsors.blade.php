@@ -4,7 +4,7 @@
         <div class="col-md-10">
             <h1>SPONSORS</h1>
         </div>
-        <div class="col-md-2 d-flex align-items-center">
+        <div class="col-md-2 d-flex align-items-center justify-content-end">
             <a href="{{ route('sponsor.create') }}" class="btn btn-primary">ADD SPONSORS</a>
         </div>
     </div>
@@ -14,25 +14,21 @@
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>Id</th>
-                        <th>Desnivel</th>
-                        <th>Competidores</th>
-                        <th>Distancia</th>
-                        <th>Fecha</th>
-                        <th>Hora</th>
-                        <th>Inscripción</th>
+                        <th>CIF</th>
+                        <th>Nombre</th>
+                        <th>Address</th>
+                        <th>Logo</th>
+                        <th>&nbsp;</th>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach ($sponsors as $sponsor)
                     <tr>
-                        <td>{{ $sponsor->id }}</td>
-                        <td>{{ $sponsor->desnivel }}</td>
-                        <td>{{ $sponsor->competidores }}</td>
-                        <td>{{ $sponsor->distancia }}</td>
-                        <td>{{ $sponsor->fecha }}</td>
-                        <td>{{ $sponsor->hora }}</td>
-                        <td>{{ $sponsor->inscripcion }}</td>
+                        <td>{{ $sponsor->cif }}</td>
+                        <td>{{ $sponsor->nombre }}</td>
+                        <td>{{ $sponsor->address }}</td>
+                        <td>{{ $sponsor->logo }}</td>
+                        <td><a href="{{ route('sponsor.edit', ['sponsor' => $sponsor]) }}">Edit</a></td>
                     </tr>
                     @endforeach
                 </tbody>

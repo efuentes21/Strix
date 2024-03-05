@@ -46,7 +46,7 @@ class SponsorController extends Controller
      */
     public function edit(Sponsor $sponsor)
     {
-        //
+        return view('admin.sponsors.edit', compact('sponsor'));
     }
 
     /**
