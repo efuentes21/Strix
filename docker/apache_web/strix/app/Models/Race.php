@@ -38,6 +38,6 @@ class Race extends Model
      */
     protected $casts = [
         'date' => 'date',
-        'time' => 'timestamp',
+        
     ];
 }

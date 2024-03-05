@@ -23,8 +23,8 @@ class RaceFactory extends Factory
             'max_competitors' => fake()->numberBetween(10, 100),
             'distance' => fake()->numberBetween(1, 25),
             'date' => fake()->date(),
-            'time' => fake()->date(),
-            'start' => fake()->time(),
+            'time' => fake()->time(),
+            'start' => fake()->address(),
             'promotion' => 'promotion.jpg',
             'inscription' => fake()->numberBetween(10, 100)
         ];

@@ -12,6 +12,7 @@ class RaceController extends Controller
      */
     public function index()
     {
+        // $races = Race::all();
         $races = Race::paginate(30);
         return view('admin.races.index', compact('races'));
     }
@@ -44,8 +45,6 @@ class RaceController extends Controller
         ]);
 
         try {
-            $dateTime = $validatedData['date'] . ' ' . $validatedData['time'] ;
-            $validatedData['time'] = $dateTime;
             $race = Race::create($validatedData);
         } catch (Exception $e) {
             return redirect()->back()->with('error', $e->getMessage());

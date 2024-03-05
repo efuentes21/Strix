@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Competitor>
@@ -17,12 +18,13 @@ class CompetitorFactory extends Factory
     public function definition(): array
     {
         return [
-            'dni' => fake()->unique()->dni(),
+            'dni' => strtoupper(Str::random(9)),
             'name' => fake()->name(),
             'address' => fake()->address(),
             'birthdate' => fake()->date(),
             'pro' => fake()->numberBetween(0, 1),
-            'insurance'
+            'insurance' => fake()->numberBetween(0, 50),
+            'partner' => fake()->numberBetween(0, 1)
         ];
     }
 }

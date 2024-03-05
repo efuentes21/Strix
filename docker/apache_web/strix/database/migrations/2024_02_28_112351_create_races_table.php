@@ -19,7 +19,7 @@ return new class extends Migration
             $table->integer('max_competitors');
             $table->decimal('distance');
             $table->date('date');
-            $table->timestamp('time');
+            $table->time('time');
             $table->string('start')->nullable();
             $table->string('promotion')->nullable();
             $table->decimal('inscription')->nullable();
