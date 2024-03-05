@@ -20,5 +20,9 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         \App\Models\Race::factory(10)->create();
+
+        \App\Models\Sponsor::factory(10)->create();
+
+        \App\Models\Insurance::factory(10)->create();
     }
 }

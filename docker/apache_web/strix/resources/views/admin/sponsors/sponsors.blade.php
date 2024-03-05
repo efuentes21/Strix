@@ -15,9 +15,10 @@
                 <thead>
                     <tr>
                         <th>CIF</th>
-                        <th>Nombre</th>
+                        <th>Name</th>
                         <th>Address</th>
                         <th>Logo</th>
+                        <th>Principal</th>
                         <th>&nbsp;</th>
                     </tr>
                 </thead>
@@ -25,9 +26,10 @@
                     @foreach ($sponsors as $sponsor)
                     <tr>
                         <td>{{ $sponsor->cif }}</td>
-                        <td>{{ $sponsor->nombre }}</td>
+                        <td>{{ $sponsor->name }}</td>
                         <td>{{ $sponsor->address }}</td>
                         <td>{{ $sponsor->logo }}</td>
+                        <td>{{ $sponsor->principal }}</td>
                         <td><a href="{{ route('sponsor.edit', ['sponsor' => $sponsor]) }}">Edit</a></td>
                     </tr>
                     @endforeach
