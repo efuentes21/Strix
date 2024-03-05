@@ -22,7 +22,6 @@ return new class extends Migration
             $table->timestamp('time');
             $table->string('start')->nullable();
             $table->string('promotion')->nullable();
-            $table->decimal('sponsorship')->nullable();
             $table->decimal('inscription')->nullable();
             $table->timestamps();
         });

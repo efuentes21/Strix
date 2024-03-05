@@ -58,11 +58,13 @@
       <input type="file" class="form-control" id="promotion" name="promotion" aria-describedby="promotion-help" required>
       <div id="promotion-help" class="form-text">Upload the race promotion banner.</div>
     </div>
+    <!--
     <div class="mb-3">
       <label for="sponsorship" class="form-label">Sponsorship</label>
       <input type="number" class="form-control" id="sponsorship" name="sponsorship" aria-describedby="sponsorship-help" required>
       <div id="sponsorship-help" class="form-text">Select the sponsors for the race.</div>
     </div>
+    -->
     <div class="mb-3">
       <label for="inscription" class="form-label">Inscription</label>
       <input type="number" class="form-control" id="inscription" name="inscription" aria-describedby="inscription-help" required>

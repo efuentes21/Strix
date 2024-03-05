@@ -12,7 +12,7 @@ class RaceController extends Controller
      */
     public function index()
     {
-        $races = Race::all();
+        $races = Race::paginate(30);
         return view('admin.races.index', compact('races'));
     }
 
@@ -39,8 +39,8 @@ class RaceController extends Controller
             'time' => 'required|date_format:H:i',
             'start' => 'nullable|string',
             'promotion' => 'nullable|string',
-            'sponsorship' => 'nullable|string',
-            'inscription' => 'nullable|string',
+            'sponsorship' => 'nullable|numeric',
+            'inscription' => 'nullable|numeric',
         ]);
 
         try {

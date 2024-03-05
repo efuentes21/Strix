@@ -26,7 +26,6 @@ class Race extends Model
         'time',
         'start',
         'promotion',
-        'sponsorship',
         'inscription',
     ];
 
