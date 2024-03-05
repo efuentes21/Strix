@@ -4,7 +4,7 @@
         <div class="col-md-10">
             <h1>CHALLENGES</h1>
         </div>
-        <div class="col-md-2 d-flex align-items-center">
+        <div class="col-md-2 d-flex align-items-center justify-content-end">
             <a href="{{ route('challenge.create') }}" class="btn btn-primary">ADD CHALLENGES</a>
         </div>
     </div>

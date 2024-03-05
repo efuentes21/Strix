@@ -20,10 +20,10 @@ return new class extends Migration
             $table->decimal('distance');
             $table->date('date');
             $table->timestamp('time');
-            $table->string('start');
-            $table->string('promotion');
-            $table->decimal('sponsorship');
-            $table->decimal('inscription');
+            $table->string('start')->nullable();
+            $table->string('promotion')->nullable();
+            $table->decimal('sponsorship')->nullable();
+            $table->decimal('inscription')->nullable();
             $table->timestamps();
         });
     }

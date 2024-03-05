@@ -29,7 +29,29 @@ class RaceController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'description' => 'required|string|max:255',
+            'unevenness' => 'required|numeric',
+            'map' => 'required|string',
+            'max_competitors' => 'required|integer',
+            'distance' => 'required|numeric',
+            'date' => 'required|date',
+            'time' => 'required|date_format:H:i',
+            'start' => 'nullable|string',
+            'promotion' => 'nullable|string',
+            'sponsorship' => 'nullable|string',
+            'inscription' => 'nullable|string',
+        ]);
+
+        try {
+            $dateTime = $validatedData['date'] . ' ' . $validatedData['time'] ;
+            $validatedData['time'] = $dateTime;
+            $race = Race::create($validatedData);
+        } catch (Exception $e) {
+            return redirect()->back()->with('error', $e->getMessage());
+        }
+
+        return redirect()->route('race.index');
     }
 
     /**

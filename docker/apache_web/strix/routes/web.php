@@ -24,6 +24,7 @@ Route::get('/', function () {
 
 Route::get('admin/races', [RaceController::class, 'index'])->name('race.index');
 Route::get('race/create', [RaceController::class, 'create'])->name('race.create');
+Route::post('race/store', [RaceController::class, 'store'])->name('race.store');
 
 Route::get('admin/sponsors', [SponsorController::class, 'index'])->name('sponsor.index');
 Route::get('sponsor/create', [SponsorController::class, 'create'])->name('sponsor.create');

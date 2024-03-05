@@ -4,7 +4,7 @@
         <div class="col-md-10">
             <h1>RACES</h1>
         </div>
-        <div class="col-md-2 d-flex align-items-center">
+        <div class="col-md-2 d-flex align-items-center justify-content-end">
             <a href="{{ route('race.create') }}" class="btn btn-primary">ADD RACE</a>
         </div>
     </div>
@@ -27,12 +27,12 @@
                     @foreach ($races as $race)
                     <tr>
                         <td>{{ $race->id }}</td>
-                        <td>{{ $race->desnivel }}</td>
-                        <td>{{ $race->competidores }}</td>
-                        <td>{{ $race->distancia }}</td>
-                        <td>{{ $race->fecha }}</td>
-                        <td>{{ $race->hora }}</td>
-                        <td>{{ $race->inscripcion }}</td>
+                        <td>{{ $race->unevenness }}</td>
+                        <td>{{ $race->max_competitors }}</td>
+                        <td>{{ $race->distance }}</td>
+                        <td>{{ $race->date }}</td>
+                        <td>{{ $race->time }}</td>
+                        <td>{{ $race->inscription }}€</td>
                     </tr>
                     @endforeach
                 </tbody>
