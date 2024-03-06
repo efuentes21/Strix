@@ -44,8 +44,9 @@ class SponsorController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Sponsor $sponsor)
+    public function edit(Sponsor $sponsor, $cif)
     {
+        $sponsor = Sponsor::where('cif', $cif)->first();
         return view('admin.sponsors.edit', compact('sponsor'));
     }
 

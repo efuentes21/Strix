@@ -7,9 +7,9 @@
             <a href="{{ route('sponsor.index') }}" class="btn btn-danger">Cancel</a>
         </div>
     </div>
-    <form action="{{ route('sponsor.update', $sponsor->id) }}" method="POST" enctype="multipart/form-data" class="mb-3">
+    <form action="{{ route('sponsor.update', $sponsor->id) }}" method="PUT" enctype="multipart/form-data" class="mb-3">
         @csrf
-        @method('PUT')
+        {{-- @method('PUT') --}}
         <div class="mb-3">
             <label for="cif" class="form-label">CIF</label>
             <input type="text" class="form-control" id="cif" name="cif" value="{{ $sponsor->cif }}" aria-describedby="cif-help">

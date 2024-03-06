@@ -30,7 +30,7 @@
                         <td>{{ $sponsor->address }}</td>
                         <td>{{ $sponsor->logo }}</td>
                         <td>{{ $sponsor->principal }}</td>
-                        <td><a href="{{ route('sponsor.edit', ['sponsor' => $sponsor]) }}">Edit</a></td>
+                        <td><a href="{{ route('sponsor.edit', ['cif' => $sponsor->cif]) }}">Edit</a></td>
                     </tr>
                     @endforeach
                 </tbody>
