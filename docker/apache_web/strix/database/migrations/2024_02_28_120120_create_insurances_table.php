@@ -12,10 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('insurances', function (Blueprint $table) {
-            $table->string('cif')->primary();
+            $table->id();
+            $table->string('cif')->unique();
             $table->string('name');
             $table->string('address');
             $table->decimal('price');
+            $table->boolean('active');
             $table->timestamps();
         });
     }

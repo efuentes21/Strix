@@ -24,7 +24,8 @@ class CompetitorFactory extends Factory
             'birthdate' => fake()->date(),
             'pro' => fake()->numberBetween(0, 1),
             'insurance' => fake()->numberBetween(0, 50),
-            'partner' => fake()->numberBetween(0, 1)
+            'partner' => fake()->numberBetween(0, 1),
+            'active' => fake()->numberBetween(0, 1)
         ];
     }
 }

@@ -24,6 +24,7 @@ class InsuranceFactory extends Factory
             'name' => fake()->name(),
             'address' => fake()->address(),
             'price' => fake()->numberBetween(25, 75),
+            'active' => fake()->numberBetween(0, 1)
         ];
     }
 }

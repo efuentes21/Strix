@@ -26,6 +26,7 @@ class SponsorFactory extends Factory
             'logo' => 'ruta.jpg',
             'address' => fake()->name(),
             'principal' => fake()->numberBetween(0, 1),
+            'active' => fake()->numberBetween(0, 1)
         ];
     }
 }

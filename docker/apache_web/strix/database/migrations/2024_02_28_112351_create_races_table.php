@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('start')->nullable();
             $table->string('promotion')->nullable();
             $table->decimal('inscription')->nullable();
+            $table->boolean('active');
             $table->timestamps();
         });
     }

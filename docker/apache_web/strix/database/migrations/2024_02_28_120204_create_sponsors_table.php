@@ -12,11 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('sponsors', function (Blueprint $table) {
-            $table->string('cif')->primary();
+            $table->id();
+            $table->string('cif')->unique();
             $table->string('name');
             $table->string('logo');
             $table->string('address');
-            $table->boolean('principal');   
+            $table->boolean('principal');
+            $table->boolean('active'); 
             $table->timestamps();
         });
     }

@@ -19,6 +19,7 @@ return new class extends Migration
             $table->boolean('pro');
             $table->string('insurance');
             $table->boolean('partner');
+            $table->boolean('active');
             $table->timestamps();
         });
     }
